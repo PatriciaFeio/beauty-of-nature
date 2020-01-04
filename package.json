@@ -1,0 +1,19 @@
+{
+  "name": "beauty-of-nature",
+  "version": "1.0.0",
+  "description": "Fictional landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatriciaFeio/beauty-of-nature.git"
+  },
+  "author": "Patrícia Feio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatriciaFeio/beauty-of-nature/issues"
+  },
+  "homepage": "https://github.com/PatriciaFeio/beauty-of-nature#readme"
+}
