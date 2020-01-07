@@ -1,0 +1,15 @@
+@import 'normalize.css';
+@import 'base/_global.css';
+@import 'modules/_large-image.css';
+
+@font-face {
+    font-family: 'HoeflerText-Regular';
+    src: url('fonts/HoeflerText-Regular.eot');
+    src: url('fonts/HoeflerText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/HoeflerText-Regular.svg#HoeflerText-Regular') format('svg'),
+        url('fonts/HoeflerText-Regular.ttf') format('truetype'),
+        url('fonts/HoeflerText-Regular.woff') format('woff'),
+        url('fonts/HoeflerText-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
