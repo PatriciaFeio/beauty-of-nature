@@ -1,0 +1,24 @@
+.page-section {
+    &__title {
+        font-family: 'bebas-neue', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 86px;
+        color: #DB4766;
+    }
+
+    &__subtitle {
+        font-family: 'bebas-neue', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 44px;
+        color: #323159;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        color: #787894;
+    }
+}
