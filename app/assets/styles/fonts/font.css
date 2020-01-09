@@ -2,11 +2,15 @@
   font-family: 'HoeflerText-Regular';
   src: url('HoeflerText-Regular.eot');
   src: url('HoeflerText-Regular.eot?#iefix') format('embedded-opentype'),
-       url('HoeflerText-Regular.svg#HoeflerText-Regular') format('svg'),
-       url('HoeflerText-Regular.ttf') format('truetype'),
-       url('HoeflerText-Regular.woff') format('woff'),
-       url('HoeflerText-Regular.woff2') format('woff2');
+    url('HoeflerText-Regular.svg#HoeflerText-Regular') format('svg'),
+    url('HoeflerText-Regular.ttf') format('truetype'),
+    url('HoeflerText-Regular.woff') format('woff'),
+    url('HoeflerText-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('AvenirLTStd-Book.otf');
+}
