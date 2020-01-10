@@ -1,5 +1,4 @@
 .page-section {
-    box-shadow: 2px 4px 10px #dadada;
     padding-left: 72px;
     padding-right: 72px;
 
@@ -28,5 +27,9 @@
         margin: 0;
         padding-top: 25px;
         padding-bottom: 60px;
+    }
+
+    &__subscription {
+        box-shadow: 2px 4px 10px #dadada;
     }
 }
