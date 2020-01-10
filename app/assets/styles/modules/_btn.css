@@ -1,0 +1,15 @@
+.btn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'Avenir-Book', sans-serif;
+
+    &--medium {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+    }
+
+    &--cabaret {
+        color: $cabaret;
+    }
+}

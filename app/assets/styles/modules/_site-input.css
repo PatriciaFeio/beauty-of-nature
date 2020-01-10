@@ -1,0 +1,34 @@
+.site-input {
+    font-family: 'Avenir-Book', sans-serif;
+    color: $martinique;
+    border-style: hidden;
+
+    &--padding {
+        padding: 23px;
+    }
+
+    &--cabaret {
+        color: $cabaret;
+        text-transform: uppercase;
+    }
+
+    &--blink {
+        border-left: solid 3px $cabaret;
+        animation: blinking .7s step-end infinite alternate;
+    }
+
+    @keyframes blinking {
+        50% {
+            border-left: #fff;
+            margin-left: 3px;
+        }
+    }
+
+    &::placeholder {
+        font-size: 1rem;
+    }
+
+    &--small::placeholder {
+        font-size: 0.75rem;
+    }
+}
