@@ -1,0 +1,41 @@
+.site-footer {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    &__links {
+        text-decoration: none;
+        color: $martinique;
+    }
+
+    &__links:hover {
+        color: $cabaret;
+    }
+
+    &__copyright {
+        font-size: 0.75rem;
+        font-family: 'HoeflerText-Regular.eot', sans-serif;
+        color: $waterloo;
+    }
+
+    &__social-networks {
+        align-self: flex-end;
+    }
+
+    &__social-networks-links {
+        transition: all .2s ease-in-out;
+        margin-right: 5px;
+    }
+
+    &__social-networks-links:hover {
+        transform: scale(1.2);
+        filter: invert(0.4);
+    }
+
+}
