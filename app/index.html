@@ -10,20 +10,15 @@
     <body>
         <div class="site-wrapper">
             <header class="site-header">
-                <div class="wrapper">
-                    <div class="site-header__logo">
-                        <img src="assets/images/planet-earth.svg" class="site-header__icon">
-                        <p class="site-header__tagline">Nature Illustrated</p>
-                    </div>
-                    <div class="site-header__search">
-                        <form action="" method="GET">
+                <div class="site-header__wrapper">
+                    <img src="assets/images/site-logo.svg" class="site-header__logo">
+                        <form action="" method="GET" class="site-header__search">
                             <button type="submit" class="btn">
                                 <img class="site-header__search-icon" src="assets/images/search_icon.svg">
                             </button>
                             <input type="text" placeholder="Search" class="site-input site-input--small" required>
                         </form>
                     </div>
-                </div>
             </header>
             <section class="page-section">
                 <div class="wrapper">
@@ -41,16 +36,17 @@
                 </div>
             </section>
             <footer class="site-footer">
-                <div class="wrapper">
-                    <div class="site-footer__social-networks"></div>
+                <div class="site-footer__wrapper">
                     <div class="site-footer__copyright">
-                        <p>
-                            <span class="site-footer__dev-text">Copyright &copy; 2020 Coded by Patrícia Feio.</span>
-                        </p>
-                        <p>
-                            <span class="site-footer__design-text">Designed by <a href="https://shreyashbarot.com/">Shreyash Barot</a></span>
-                        </p>
-                        <p>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+                        <p class="site-footer__text">Copyright &copy; 2020 Coded by <a class="site-footer__links" href="" title="Patricia Feio">Patrícia Feio</a></p>
+                        <p class="site-footer__text">Designed by <a class="site-footer__links" href="https://shreyashbarot.com/" title="Shreyash Barot">Shreyash Barot</a></p>
+                        <p class="site-footer__text">Icon made by <a class="site-footer__links" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="site-footer__links" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+                    </div>
+                    <div class="site-footer__social-networks">
+                        <a href="#" title="facebook"><img src="assets/images/facebook_icon.svg" class="site-footer__social-networks-links"></a>
+                        <a href="#" title="goggle+"><img src="assets/images/Google_icon.svg" class="site-footer__social-networks-links"></a>
+                        <a href="#" title="linkedin"><img src="assets/images/linkedin_icon.svg" class="site-footer__social-networks-links"></a>
+                        <a href="#" title="twitter"><img src="assets/images/twitter_icon.svg" class="site-footer__social-networks-links"></a>
                     </div>
             </footer>
         </div>
