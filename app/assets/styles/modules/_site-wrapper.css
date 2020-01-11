@@ -1,4 +1,7 @@
 .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 43%;
     max-width: 620px;
     height: 100vh;

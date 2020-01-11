@@ -28,7 +28,17 @@
         font-size: 1rem;
     }
 
+    &--small {
+        width: 3em;
+    }
+
     &--small::placeholder {
         font-size: 0.75rem;
+        text-align: right;
     }
+}
+
+.site-input:focus {
+    outline: none;
+    background: #dadada;
 }
