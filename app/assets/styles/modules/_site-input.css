@@ -24,6 +24,11 @@
         }
     }
 
+    &--blink:focus {
+        border-left: solid 3px $cabaret;
+        animation-play-state: paused;
+    }
+
     &::placeholder {
         font-size: 1rem;
     }
@@ -34,7 +39,7 @@
 
     &--small::placeholder {
         font-size: 0.75rem;
-        text-align: right;
+        text-align: center;
     }
 }
 
