@@ -3,31 +3,43 @@
     padding-right: 72px;
 
     &__title {
-        font-family: 'bebas-neue', sans-serif;
+        font-family: 'Bebas Neue', cursive;
         font-weight: 400;
         font-style: normal;
-        font-size: 5.375rem;
+        line-height: 1;
+        font-size: 4rem;
+        /* 64px */
         color: $cabaret;
         text-transform: uppercase;
         margin: 0;
+
+        @mixin atSmall {
+            font-size: 5.375rem;
+            /* 86px */
+        }
     }
 
     &__subtitle {
-        font-family: 'HoeflerText-Regular.eot', sans-serif;
+        font-family: 'HoeflerText-Regular', sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 2.75rem;
+        line-height: 1;
+        font-size: 2rem;
         color: $martinique;
         margin: 0;
+
+        @mixin atSmall {
+            font-size: 2.75rem;
+            /* 44px */
+        }
     }
 
     &__description {
-        font-family: 'HoeflerText-Regular.eot', sans-serif;
+        font-family: 'HoeflerText-Regular', sans-serif;
         color: $waterloo;
         margin: 0;
         padding-top: 25px;
         padding-bottom: 60px;
-        line-height: 1.4;
     }
 
     &__subscription {
