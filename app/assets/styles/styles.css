@@ -1,4 +1,5 @@
 @import 'normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 @import 'base/_variables.css';
 @import 'base/_mixins.css';
 @import 'base/_global.css';
@@ -8,14 +9,3 @@
 @import 'modules/_btn.css';
 @import 'modules/_site-input.css';
 @import 'modules/_site-footer.css';
-
-@font-face {
-    font-family: 'HoeflerText-Regular';
-    src: url('fonts/HoeflerText-Regular.eot'),
-        url('assets/styles/fonts/HoeflerText-Regular.svg') format('svg'),
-        url('assets/styles/fonts/HoeflerText-Regular.ttf') format('truetype'),
-        url('assets/styles/fonts/HoeflerText-Regular.woff') format('woff'),
-        url('assets/styles/fonts/HoeflerText-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
