@@ -13,4 +13,8 @@
     &--cabaret {
         color: $cabaret;
     }
+
+    &--padding {
+        padding: 0px 10px;
+    }
 }

@@ -1,9 +1,4 @@
 .site-footer {
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-
     &__text {
         margin: 0;
         line-height: 1.6;
@@ -20,7 +15,7 @@
 
     &__copyright {
         font-size: 0.75rem;
-        font-family: 'HoeflerText-Regular.eot', sans-serif;
+        font-family: 'HoeflerText-Regular', sans-serif;
         color: $waterloo;
     }
 
@@ -31,11 +26,28 @@
     &__social-links {
         transition: all .2s ease-in-out;
         margin-right: 5px;
+        /* fill: #b2dae8; */
     }
 
     &__social-links:hover {
         transform: scale(1.2);
         filter: invert(0.4);
+        /* fill: #0084B4; */
     }
 
+    &--noDisplay {
+        display: none;
+
+        @mixin atMedium {
+            display: block;
+        }
+    }
+
+    &--display {
+        display: block;
+
+        @mixin atMedium {
+            display: none;
+        }
+    }
 }

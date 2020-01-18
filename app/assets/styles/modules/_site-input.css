@@ -12,6 +12,16 @@
         text-transform: uppercase;
     }
 
+    &--margin {
+        margin-bottom: 25px;
+
+        @mixin atMedium {
+            @media (min-width: 768px) {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
     &--blink {
         border-left: solid 3px $cabaret;
         animation: blinking .7s step-end infinite alternate;
@@ -33,13 +43,22 @@
         font-size: 1rem;
     }
 
-    &--small {
-        width: 3em;
+    &--search {
+        width: 85%;
+        line-height: 3.15;
+        padding-left: 5px;
+        transition: width 0.5s;
+
+        @mixin atMedium {
+            @media (min-width: 768px) {
+                line-height: 2.15;
+            }
+        }
     }
 
     &--small::placeholder {
         font-size: 0.75rem;
-        text-align: center;
+        text-align: left;
     }
 }
 

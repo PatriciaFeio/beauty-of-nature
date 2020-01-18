@@ -1,14 +1,25 @@
 .site-header {
-    &__logo {
-        width: 20%;
-    }
 
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
+    &__logo {
+        width: 25%;
+
+        @mixin atMedium {
+            width: 20%;
+        }
     }
 
     &__search {
-        align-self: flex-end;
+        align-self: flex-start;
+        display: flex;
+        width: 100%;
+        margin-top: 35px;
+        box-shadow: 2px 4px 10px #dadada;
+        -webkit-transition: width 0.4s;
+        transition: width 0.4s;
+
+        @mixin atMedium {
+            align-self: flex-end;
+            width: 30%;
+        }
     }
 }
