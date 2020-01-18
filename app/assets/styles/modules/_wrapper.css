@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: #fff; */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 35px 45px;
+
+    @mixin atMedium {
+        width: 65%;
+        max-width: 620px;
+        height: 100vh;
+    }
+
+    @mixin atLarge {
+        width: 43%;
+        max-width: 620px;
+        height: 100vh;
+    }
+
+    &--display {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--column {
+        flex-direction: column;
+
+        @mixin atMedium {
+            flex-direction: row;
+        }
+    }
+}

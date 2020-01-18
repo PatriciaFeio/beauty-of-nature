@@ -1,0 +1,22 @@
+.site-video {
+    width: 100%;
+
+    @mixin atMedium {
+        position: fixed;
+        z-index: -1;
+    }
+}
+
+@media (min-aspect-ration: 16/9) {
+    .site-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio) {
+    .site-video {
+        width: auto;
+        height: 100%;
+    }
+}
