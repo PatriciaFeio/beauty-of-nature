@@ -2,14 +2,12 @@
     font-family: 'Avenir-Book', sans-serif;
     color: $martinique;
     border-style: hidden;
+    padding: 10px;
+    width: 100%;
 
     &--padding {
-        padding: 23px;
-    }
-
-    &--cabaret {
-        color: $cabaret;
-        text-transform: uppercase;
+        padding-top: 23px;
+        padding-bottom: 23px;
     }
 
     &--margin {
@@ -20,6 +18,11 @@
                 margin-bottom: 0px;
             }
         }
+    }
+
+    &--cabaret {
+        color: $cabaret;
+        text-transform: uppercase;
     }
 
     &--blink {
@@ -43,26 +46,13 @@
         font-size: 1rem;
     }
 
-    &--search {
-        width: 85%;
-        line-height: 3.15;
-        padding-left: 5px;
-        transition: width 0.5s;
-
-        @mixin atMedium {
-            @media (min-width: 768px) {
-                line-height: 2.15;
-            }
-        }
-    }
-
-    &--small::placeholder {
-        font-size: 0.75rem;
-        text-align: left;
+    &:focus {
+        outline: none;
+        background: #dadada;
     }
 }
 
-.site-input:focus {
-    outline: none;
-    background: #dadada;
+&--small::placeholder {
+    font-size: 0.75rem;
+    text-align: left;
 }

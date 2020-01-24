@@ -17,15 +17,19 @@
         font-size: 0.75rem;
         font-family: 'HoeflerText-Regular', sans-serif;
         color: $waterloo;
+        text-align: end;
     }
 
     &__social {
         align-self: flex-end;
+        margin-bottom: 55px;
     }
 
     &__social-links {
         transition: all .2s ease-in-out;
-        margin-right: 5px;
+        margin-right: 7px;
+        width: 40px;
+        height: auto;
         /* fill: #b2dae8; */
     }
 
@@ -45,6 +49,7 @@
 
     &--display {
         display: block;
+        margin-top: 55px;
 
         @mixin atMedium {
             display: none;

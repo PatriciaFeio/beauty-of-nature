@@ -1,20 +1,37 @@
 .btn {
     border: none;
-    background-color: #fff;
+    background-color: $white;
     cursor: pointer;
-    font-family: 'Avenir-Book', sans-serif;
 
     &--medium {
-        font-size: 0.875rem;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
         text-transform: uppercase;
         padding: 22px 28px;
     }
 
-    &--cabaret {
-        color: $cabaret;
+    &--color {
+        background-color: $cabaret;
+        color: $white;
+
+        @mixin atMedium {
+            background-color: $white;
+            color: $cabaret;
+        }
     }
 
     &--padding {
         padding: 0px 10px;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: $white;
+        border: 1px solid $cabaret;
+        color: $cabaret;
+        outline: none;
     }
 }

@@ -1,12 +1,7 @@
 .page-section {
     padding-left: 0px;
     padding-right: 0px;
-    margin-top: 105px;
-
-    @mixin atLarge {
-        padding-left: 72px;
-        padding-right: 72px;
-    }
+    margin-top: 125px;
 
     &__title {
         font-family: 'Bebas Neue', cursive;
@@ -46,9 +41,21 @@
         margin: 0;
         padding-top: 25px;
         padding-bottom: 60px;
+
+        @mixin atSmall {
+            padding-right: 50px;
+        }
+
+        @mixin atMedium {
+            padding-right: 140px;
+        }
+
+        @mixin atLarge {
+            padding-right: 0px;
+        }
     }
 
     &__subscription {
-        box-shadow: 2px 4px 10px #dadada;
+        margin: 20px 0;
     }
 }

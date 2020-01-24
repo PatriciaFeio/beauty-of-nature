@@ -3,23 +3,16 @@
     &__logo {
         width: 25%;
 
-        @mixin atMedium {
+        @mixin atSmall {
             width: 20%;
         }
-    }
-
-    &__search {
-        align-self: flex-start;
-        display: flex;
-        width: 100%;
-        margin-top: 35px;
-        box-shadow: 2px 4px 10px #dadada;
-        -webkit-transition: width 0.4s;
-        transition: width 0.4s;
 
         @mixin atMedium {
-            align-self: flex-end;
-            width: 30%;
+            width: 15%;
+        }
+
+        @mixin atLarge {
+            width: 20%;
         }
     }
 }
