@@ -1,0 +1,41 @@
+.arrow {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+    &::after,
+    &::before {
+        content: '';
+        box-sizing: border-box;
+    }
+
+    &-bar {
+        width: 14px;
+        height: 14px;
+        border-width: 3px 3px 0 0;
+        border-style: solid;
+        left: 26px;
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    &-bar::before {
+        bottom: 0px;
+        content: '';
+        height: 3px;
+        position: absolute;
+        right: -4px;
+        width: 27px;
+        box-shadow: inset 0 0 0 32px;
+        transform: rotate(-45deg);
+    }
+
+    &--color {
+        color: $white;
+
+        @mixin atMedium {
+            color: $cabaret;
+        }
+    }
+}

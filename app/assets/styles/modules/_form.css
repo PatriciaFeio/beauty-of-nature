@@ -1,0 +1,35 @@
+.form {
+    display: flex;
+
+    &__search {
+        align-self: flex-start;
+        width: 100%;
+        /* padding: 0 0 5px 5px; */
+        margin-top: 25px;
+        /* box-shadow: 2px 4px 10px #dadada; */
+        -webkit-transition: width 0.4s;
+        transition: width 0.4s;
+        align-self: flex-end;
+
+        @mixin atMedium {
+            align-self: flex-end;
+            width: 30%;
+        }
+
+        &--box-shadow {
+            box-shadow: $boxShadow;
+        }
+    }
+
+    &--box-shadow {
+        box-shadow: none;
+
+        @mixin atMedium {
+            box-shadow: $boxShadow;
+        }
+    }
+
+    &__subscription {
+        flex-direction: column;
+    }
+}
