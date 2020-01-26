@@ -1,4 +1,12 @@
 .site-footer {
+    display: flex;
+    flex-direction: column;
+
+    @mixin atMedium {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     &__text {
         margin: 0;
         line-height: 1.6;
@@ -17,12 +25,20 @@
         font-size: 0.75rem;
         font-family: 'HoeflerText-Regular', sans-serif;
         color: $waterloo;
-        text-align: end;
+
+        @mixin atMedium {
+            order: -1;
+            margin-bottom: -4px;
+        }
     }
 
     &__social {
         align-self: flex-end;
-        margin-bottom: 55px;
+        margin-bottom: 35px;
+
+        @mixin atMedium {
+            margin-bottom: -7px;
+        }
     }
 
     &__social-links {
@@ -30,29 +46,10 @@
         margin-right: 7px;
         width: 40px;
         height: auto;
-        /* fill: #b2dae8; */
     }
 
     &__social-links:hover {
         transform: scale(1.2);
-        filter: invert(0.4);
-        /* fill: #0084B4; */
-    }
-
-    &--noDisplay {
-        display: none;
-
-        @mixin atMedium {
-            display: block;
-        }
-    }
-
-    &--display {
-        display: block;
-        margin-top: 55px;
-
-        @mixin atMedium {
-            display: none;
-        }
+        filter: invert(0.3) brightness(1.2);
     }
 }

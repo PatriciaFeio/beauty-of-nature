@@ -1,7 +1,8 @@
 .page-section {
     padding-left: 0px;
     padding-right: 0px;
-    margin-top: 125px;
+    margin-top: 90px;
+    margin-bottom: 90px;
 
     &__title {
         font-family: 'Bebas Neue', cursive;
@@ -57,5 +58,9 @@
 
     &__subscription {
         margin: 20px 0;
+
+        @mixin atMedium {
+            margin: 0px;
+        }
     }
 }
