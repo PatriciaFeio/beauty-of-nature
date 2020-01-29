@@ -11,18 +11,11 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="slideshow-background">
-        <ul class="slideshow-background__slides">
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span>2</span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-        </ul>
+      <div class="slider-backg">
+        <div class="slider-backg__slide slide1"></div>
+        <div class="slider-backg__slide slide2"></div>
+        <div class="slider-backg__slide slide3"></div>
+        </div>
       </div>
       <div class="content-section content-section__text">
         <header class="site-header">
@@ -82,27 +75,37 @@
           </div>
         </section>
         <footer class="site-footer">
-          <div class="site-footer__social">
-            <a href="#" target="_blank" rel="noopener"
-              ><img
-                src="assets/images/facebook_icon.svg"
-                class="site-footer__social-links"
-            /></a>
-            <a href="#" target="_blank" rel="noopener"
-              ><img
-                src="assets/images/Google_icon.svg"
-                class="site-footer__social-links"
-            /></a>
-            <a href="#" target="_blank" rel="noopener"
-              ><img
-                src="assets/images/linkedin_icon.svg"
-                class="site-footer__social-links"
-            /></a>
-            <a href="#" target="_blank" rel="noopener">
-              <img
-                src="assets/images/twitter_icon.svg"
-                class="site-footer__social-links"
-            /></a>
+          <div class="site-footer--right">
+            <div class="slideshow-direction">
+              <p>
+                <span class="currentSlide-counter">1</span> of <span class="totalSlide-counter">3 </span
+                ><a class="nextSlide-arrow"
+                  ><span class="arrow arrow-bar arrow-slider"></span
+                ></a>
+              </p>
+            </div>
+            <div class="site-footer__social">
+              <a href="#" target="_blank" rel="noopener"
+                ><img
+                  src="assets/images/facebook_icon.svg"
+                  class="site-footer__social-links"
+              /></a>
+              <a href="#" target="_blank" rel="noopener"
+                ><img
+                  src="assets/images/Google_icon.svg"
+                  class="site-footer__social-links"
+              /></a>
+              <a href="#" target="_blank" rel="noopener"
+                ><img
+                  src="assets/images/linkedin_icon.svg"
+                  class="site-footer__social-links"
+              /></a>
+              <a href="#" target="_blank" rel="noopener">
+                <img
+                  src="assets/images/twitter_icon.svg"
+                  class="site-footer__social-links site-footer__social-links--margin"
+              /></a>
+            </div>
           </div>
           <div class="site-footer__copyright">
             <p class="site-footer__text">
