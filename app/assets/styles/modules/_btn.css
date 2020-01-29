@@ -37,7 +37,7 @@
     &:focus,
     &:hover {
         background-color: $white;
-        border: 1px solid $cabaret;
+        /* border: 1px solid $cabaret; */
         color: $cabaret;
         outline: none;
     }
