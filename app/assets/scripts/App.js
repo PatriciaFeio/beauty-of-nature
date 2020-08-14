@@ -6,14 +6,20 @@ if (module.hot) {
 
 let sliderImages = document.querySelectorAll('.slider-backg__slide'),
   arrowForward = document.querySelector('.arrow-slider'),
+  sliderCounter = document.createElement('div'),
   current = 0;
 
+//counter
+function createCounter() {
+  sliderCounter.classList.add('slider__counter');
+}
+
 // clear all images
-function reset() {
+/* function reset() {
   for (let i = 0; i < sliderImages.length; i++) {
     sliderImages[i].style.display = 'none';
   }
-}
+} */
 
 //init slider
 function startSlide() {
