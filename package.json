@@ -20,7 +20,8 @@
   "dependencies": {
     "lodash": "^4.17.20",
     "minimist": "^1.2.6",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "y18n": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
