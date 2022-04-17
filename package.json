@@ -20,6 +20,7 @@
   "dependencies": {
     "chokidar": "^3.5.3",
     "dns-packet": "^5.3.1",
+    "glob-parent": "^6.0.2",
     "lodash": "^4.17.21",
     "minimist": "^1.2.6",
     "normalize.css": "^8.0.1",
